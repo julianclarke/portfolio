@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Julian Clarke</title>
+  <link rel="stylesheet" href="css/superslides.css">
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
+    
+    <!-- Credit given to https://github.com/nicinabox/superslides for the javascript slider -->
+
+    <style type="text/css">
+
+        body {
+            font-family: 'Avenir',sans-serif;
+        }
+
+        .site-text {
+            color: #fff;
+            text-align: center;
+            box-shadow: 3px;
+        }
+
+        #img1, #img1-l {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            height: 45px;
+            width: 45px;
+            z-index: 1500;
+        }
+
+        #img1 {
+            opacity: 0;
+        }
+
+        #img2, #img2-l {
+            position: absolute;
+            right: 75px;
+            top: 15px;
+            height: 45px;
+            width: 45px;
+            z-index: 1500;
+        }
+
+        #img2 {
+            opacity: 0;
+        }
+
+        #img3, #img3-l {
+            position: absolute;
+            right: 135px;
+            top: 15px;
+            height: 45px;
+            width: 45px;
+            z-index: 1500;
+        }
+
+        #img3 {
+            opacity: 0;
+        }    </style>
+    
+</head>
+<body>
+    <div style="position: relative; left: 0; top: 0;">
+    <img src="images/logo.png" id="main-logo">
+    </div>
+
+    <a href="http://github.com/julianclarke"><img src="images/git-white.png" id="img1-l"></a>
+    <a href="http://github.com/julianclarke"><img src="images/git-blue.png" id="img1"></a>
+   
+    <a href="http://twitter.com/julianpclarke"><img src="images/twitter-white.png" id="img2-l"></a>
+    <a href="http://twitter.com/julianpclarke"><img src="images/twitter-blue.png" id="img2"></a>
+   
+    <a href="http://linkedin.com/in/clarkejulian"><img src="images/li-white.png" id="img3-l"></a>
+    <a href="http://linkedin.com/in/clarkejulian"><img src="images/li-blue.png" id="img3"></a>
+
+  <div id="slides">
+  <ul class="slides-container">
+    <li>
+      <img src="images/splash.jpg" alt="">
+      <div class="container center">
+        <h1 style="font-weight:900; font-size:88px; text-shadow: 1px 1px 1px #000000" class="site-text">HELLO, I'M JULIAN.</h1>
+        <h2 style="font-weight: 500; font-size: 44px; text-shadow: 1px 1px 1px #000000" class="site-text">I am a marketing strategist, designer, data guy, athlete, and human. 
+</h2>
+      </div>
+    </li>
+    <li>
+      <img src="images/editwoshoes.jpg" alt="">
+      <div class="container center">
+        <h1 style="font-weight:900; font-size:88px; text-shadow: 1px 1px 1px #000000" class="site-text">SEE MY WORK.</h1>
+        <h2 style="font-weight: 400; font-size:44px; text-shadow: 1px 1px 1px #000000" class="site-text">I design everything in my life.</h2>
+      </div>
+    </li>
+    <li>
+      <img src="images/pitching.jpg" alt="">
+      <div class="container center">
+        <a href=mailto:julianpclarke@gmail.com style="font-weight:900; font-size:88px; text-shadow: 1px 1px 1px #000000" class="site-text">DROP ME A LINE.</a>
+        <h2 style="font-weight: 400; font-size: 44px; text-shadow: 1px 1px 1px #000000" class="site-text">I'd love to hear from you.</h2>
+      </div>
+    </li>
+  </ul>
+
+    <nav class="slides-navigation">
+    <a href="#" class="next">
+    </a>
+      <a href="#" class="prev"></a>
+    </nav>
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.animate-enhanced.min.js"></script>
+  <script src="js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+    $(function() {
+      $('#slides').superslides({
+        hashchange: true
+      });
+    });
+
+    $(document).ready(function(){
+        $("#img1").hover( 
+            function() {
+                $(this).stop().animate({"opacity": "1"}, "medium");
+            },
+            function() {
+                $(this).stop().animate({"opacity": "0"}, "medium");
+        });
+
+        $("#img2").hover( 
+            function() {
+                $(this).stop().animate({"opacity": "1"}, "medium");
+            },
+            function() {
+                $(this).stop().animate({"opacity": "0"}, "medium");
+        });
+
+        $("#img3").hover( 
+            function() {
+                $(this).stop().animate({"opacity": "1"}, "medium");
+            },
+            function() {
+                $(this).stop().animate({"opacity": "0"}, "medium");
+        });
+    });
+</script>    
+  </script>
+</body>
+</html>
